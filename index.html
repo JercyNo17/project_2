@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cricket Legends Hub - Virat Kohli</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Cricket Legends Hub</h1>
+    <h2>Spotlight on Virat Kohli</h2>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#profile">Player Profile</a></li>
+        <li><a href="#top-matches">Top Matches</a></li>
+        <li><a href="#fan-zone">Fan Zone</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h3>Welcome to the Cricket Legends Hub!</h3>
+    <p>Cricket is more than just a sport; it's a passion that unites fans around the globe. Discover the profiles and achievements of legendary players, starting with the phenomenal Virat Kohli.</p>
+    <img src="https://via.placeholder.com/400" alt="Virat Kohli" />
+  </section>
+
+  <section id="profile">
+    <h3>Player Profile: Virat Kohli</h3>
+    <img src="https://via.placeholder.com/200" alt="Virat Kohli Profile" />
+    <p><strong>Full Name:</strong> Virat Kohli</p>
+    <p><strong>Born:</strong> November 5, 1988, in Delhi, India</p>
+    <p><strong>Role:</strong> Batsman</p>
+    <p><strong>Career Statistics:</strong></p>
+    <ul>
+      <li>Matches: 102 Tests, 254 ODIs, 115 T20Is</li>
+      <li>Runs: 8,300+ (Test), 12,000+ (ODI), 3,000+ (T20I)</li>
+      <li>Centuries: 27 (Test), 43 (ODI), 1 (T20I)</li>
+    </ul>
+    <p><strong>Notable Achievements:</strong></p>
+    <ul>
+      <li>ICC ODI Player of the Year (2012, 2017)</li>
+      <li>ICC Test Player of the Year (2018)</li>
+      <li>Fastest player to score 8,000, 9,000, 10,000, and 11,000 runs in ODIs</li>
+    </ul>
+  </section>
+
+  <section id="top-matches">
+    <h3>Top Matches</h3>
+    <p>Here are some memorable matches featuring Virat Kohli:</p>
+    <ul>
+      <li>
+        <strong>India vs Australia, 2nd Test, 2014</strong> - Kohli scored a brilliant 115 runs in his first Test as captain.
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/example1" title="Match Highlights" frameborder="0" allowfullscreen></iframe>
+      </li>
+      <li>
+        <strong>India vs Pakistan, ICC Champions Trophy, 2017</strong> - Kohli's exceptional performance helped India clinch the title.
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/example2" title="Match Highlights" frameborder="0" allowfullscreen></iframe>
+      </li>
+    </ul>
+  </section>
+
+  <section id="fan-zone">
+    <h3>Fan Zone</h3>
+    <form id="fanStoryForm">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+      <br>
+      <label for="story">Your Favorite Player Story:</label>
+      <textarea id="story" name="story" required></textarea>
+      <br>
+      <button type="submit">Submit Story</button>
+    </form>
+    <h4>Vote for the Greatest Player:</h4>
+    <form id="voteForm">
+      <label for="player">Choose a player:</label>
+      <select id="player" name="player" required>
+        <option value="virat-kohli">Virat Kohli</option>
+        <option value="sachin-tendulkar">Sachin Tendulkar</option>
+        <option value="brian-lara">Brian Lara</option>
+        <option value="michael-clarke">Michael Clarke</option>
+      </select>
+      <button type="submit">Vote</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Cricket Legends Hub</p>
+  </footer>
+
+  <script>
+    document.getElementById('fanStoryForm').onsubmit = function(event) {
+      event.preventDefault();
+      alert("Thank you for sharing your story!");
+      // You can add code to handle the form data here
+    };
+
+    document.getElementById('voteForm').onsubmit = function(event) {
+      event.preventDefault();
+      alert("Thank you for voting!");
+      // You can add code to handle the vote data here
+    };
+  </script>
+</body>
+</html>
